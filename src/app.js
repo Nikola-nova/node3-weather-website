@@ -23,22 +23,23 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
 	res.render('index', {
 		title: 'Weather',
-		name: 'Nikola Novakovic',
+		name: 'Nikola Novaković',
 	});
 });
 
 app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About Me',
-		name: 'Nikola Novakovic',
+		name: 'Nikola Novaković',
 	});
 });
 
 app.get('/help', (req, res) => {
 	res.render('help', {
-		helpText: 'This is some helpful text',
+		helpText:
+			'For the application to fetch you real-time data for your location, please enter the search term in the input field on the homepage.',
 		title: 'Help',
-		name: 'Nikola Novakovic',
+		name: 'Nikola Novaković',
 	});
 });
 
